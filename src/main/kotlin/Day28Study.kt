@@ -79,7 +79,14 @@ fun main(args:Array<String>){
         }
         //var inputStream = File("nonono.txt").inputStream()
 
-
+    var map = mutableMapOf<String,Int>()
+        map.put("hello",1234)
+        map["world"]=5678
+        println(map.get("hello"))
+        println(map["hello"])
+        map.remove("world")
+        println(map.size)
+        map.clear()
 
 
     }

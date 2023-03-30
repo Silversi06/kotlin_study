@@ -34,6 +34,15 @@ fun main(args: Array<String>) {
     for(item in list1){
         println(item)
     }
+    
+    var map = mutableMapOf<String,Int>()
+    map.put("hello",1234)
+    map["world"]=5678
+    println(map.get("hello"))
+    println(map["hello"])
+    map.remove("world")
+    println(map.size)
+    map.clear()
 
 
     //var list2 = mutableListOf("hello","world")
